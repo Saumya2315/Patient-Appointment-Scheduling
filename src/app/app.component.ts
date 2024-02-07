@@ -1,4 +1,6 @@
 import { Component } from '@angular/core';
+import { Constant } from './constant';
+
 
 @Component({
   selector: 'app-root',
@@ -6,5 +8,6 @@ import { Component } from '@angular/core';
   styleUrls: ['./app.component.css']
 })
 export class AppComponent {
-  title = 'Pateint-Appointment-Scheduling';
+  title = Constant.title;
 }
+
