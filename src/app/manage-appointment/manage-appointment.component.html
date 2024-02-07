@@ -1,0 +1,42 @@
+<style>
+    @media (min-width: 992px) {
+      .card-deck .card {
+        margin-right: 15px;
+        margin-bottom: 15px;
+      }
+    }
+
+    @media (max-width: 991px) {
+      .card-deck .card {
+        margin-bottom: 15px;
+      }
+    }
+
+    .title-container {
+        width: 100%;
+        text-align: center;
+        margin-top: 20px;
+    }
+</style>
+
+<div class="container">
+    <div class="title-container">
+        <p>{{title}}</p>
+    </div>
+    <div class="container mt-3">
+      <div class="row card-deck">
+        <div class="col-lg-4 col-md-6 col-sm-12" *ngFor="let appointment of appointments">
+          <div class="card">
+            <div class="card-body">
+              <h5 class="card-title">{{ appointment.name }}</h5>
+              <h6 class="card-subtitle mb-2 text-muted">{{ appointment.phoneNumber }}</h6>
+              <p class="card-text">{{ appointment.reason }}</p>
+            </div>
+          </div>
+        </div>
+    </div>
+</div>
+
+      
+
+

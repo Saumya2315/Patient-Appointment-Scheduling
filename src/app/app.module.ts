@@ -5,10 +5,12 @@ import { AppComponent } from './app.component';
 import { AppointmentComponent } from './appointment/appointment.component';
 import { FormsModule } from '@angular/forms';
 import { HttpClientModule } from '@angular/common/http';
+import { ManageAppointmentComponent } from './manage-appointment/manage-appointment.component';
 @NgModule({
   declarations: [
     AppComponent,
-    AppointmentComponent
+    AppointmentComponent,
+    ManageAppointmentComponent
   ],
   imports: [
     BrowserModule,
